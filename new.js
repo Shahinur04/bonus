@@ -11,11 +11,15 @@ const img=[
     "pic/z.PNG",
     "pic/za.PNG",
 ]
+const imgEl=document.getElementById("slider-img");
 
 let imgIndex=0;
 setInterval(()=>{
     if(imgIndex===img.length){
      imgIndex=0;
     }
-console.log(imgIndex);
+    const imgUrl=images[imgIndex];
+    imgEl.setAttribute("src",imgUrl)
+    console.log(imgIndex,imgUrl);
+    imgIndex++;
 },1000)
