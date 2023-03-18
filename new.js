@@ -1,4 +1,4 @@
-
+const imgEl=document.getElementById("slider-img");
 const img=[
     "pic/hara,m.PNG",
     "pic/hm.PNG",
@@ -11,7 +11,6 @@ const img=[
     "pic/z.PNG",
     "pic/za.PNG",
 ]
-const imgEl=document.getElementById("slider-img");
 
 let imgIndex=0;
 setInterval(()=>{
